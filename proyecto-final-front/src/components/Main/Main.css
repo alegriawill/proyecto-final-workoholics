@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../Media/puntero.png");
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main_svg{
+    width: 60vw;
+}
+
+.modalSala{
+    /* width: 40vw; */
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+
+@keyframes main_text{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width: 480px) {  /*Mobile*/
+    .main_svg{
+        width: 100vw;   
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.modal {
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    padding: 2em 4em;
+    gap: 1em;
+
+    box-shadow: 3px 3px 6px #929292;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.blurBG {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 100;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    background-color: #FB088C;
+    width: fit-content;
+    height: 2em;
+    padding-left: 1em;
+    border-radius: 1em;
+
+}
+
+.icon {
+    fill: white;
+    width: 48px;
+    height: 48px;
+    scale: 0.5;
+}
+
+.espacioChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+}
+
+.chip p {
+    margin: 0;
+    color: white;
+}
+
+.modal input[type=text],
+[type=date],
+[type=time] {
+    margin: 0.25em 0em;
+    min-height: 2em;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #FB088C;
+    color: #909090;
+    font-size: 15px;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* width: 100%; */
+    overflow-y: scroll;
+    gap: 2em
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    gap: 0.5em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.fechaHora {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.grupoFechaHora {
+    width: 50%;
+
+}
+
+button {
+    width: fit-content;
+    padding: 0.5em 2em;
+    background-color: #FB088C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.button_secundario_alert {
+    background-color: white;
+    color: #DF1F1F;
+    border: 1px solid #DF1F1F;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .modal {
+        position: fixed;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 80vh;
+        max-height: 500px;
+        padding: 2em 1em;
+        gap: 1em;
+
+        box-shadow: 3px 3px 6px #929292;
+    }
+
+
+}

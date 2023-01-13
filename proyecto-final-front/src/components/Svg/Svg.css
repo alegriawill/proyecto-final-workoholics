@@ -1,0 +1,73 @@
+* {
+    cursor: url(../Media/puntero.png), auto;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+#Layer_1 {
+    scale: 0.9;
+    /* height: 95vh; */
+    /* margin-top: 8%;
+    margin-left: 10%; */
+    animation: svg 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes svg {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+/*hovers for svg*/
+
+.blue_small:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.blue_medium:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.pink_small:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.pink_small2:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.pink_medium:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.pink_large:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+@media only screen and (max-width: 480px) {  /*Mobile*/
+
+.svg{
+    transform: rotate(90deg);
+    scale: 1.5;
+}
+}

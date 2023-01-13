@@ -1,0 +1,140 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main_img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer; cursor: hand;
+}
+
+#main_text{
+    background-color: #fff;
+    /* border-radius: 20px; */
+    width: 40vw;
+    height: 85vh;
+    overflow-y: scroll;
+    animation: main_text 0.5s;
+    text-align: center;
+    border-left: 2px solid #C7C7C7;
+    /* margin: 0% auto; */
+    /* box-shadow: 0px 0px 10px #000; */
+    /* padding: 1em 2em; */
+    /* margin-top: 1%; */
+}
+
+.main_button{
+    margin: 0px auto;
+    background-color: #FB088C;
+    border: 1px solid #C7C7C7;
+    border-radius: 5px;
+    cursor: pointer; cursor: hand;
+    text-decoration: none;
+    list-style: none;
+    /* color: #000; */
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+.main_button a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main_button a:hover{
+    color: #000000;
+}
+
+
+.return{
+    scale: 0.75;
+    position: absolute;
+    display: flex;
+    color: #FB088C;
+    font-size: 16px;
+    font-weight:500;
+    margin: 5px 5px 5px 10px;
+    flex-direction: row;
+    align-items: center;
+    /* text-shadow: 1px 1px 1px #000; */
+    letter-spacing: 1px;
+}
+
+.main_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin: 0% auto;
+    background-color: #FB088C;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer; cursor: hand;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+.main_title{
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    text-align: left;
+    margin: 1rem;
+}
+
+.main_p{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    /* font-size: 18px; */
+   margin: 1rem;
+}
+
+
+@media only screen and (max-width: 480px) {  /*Mobile*/
+
+    #main_text{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        /* margin-top: 4%; */
+    }
+
+    .main_title{
+        font-size: 30px;
+    }
+
+    .main_p{
+        font-size: 15px;
+    }
+
+    .main_button{
+        width: 80%;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .return{
+        font-size: 15px;
+    }
+
+    /* .main_img{
+        transform: rotate(90deg);
+    } */
+
+}

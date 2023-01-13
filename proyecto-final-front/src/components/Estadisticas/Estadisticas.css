@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.estadisticas{  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 2em;
+    animation: estadisticas 1.7s ease-out;
+}
+canvas .grafico{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 480px){
+    .grafico{
+    margin-right: 50px;
+}
+}
+

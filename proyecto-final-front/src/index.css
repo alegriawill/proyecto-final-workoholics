@@ -1,0 +1,114 @@
+*{
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.calendarTitle{
+  text-align: center;
+  margin-top: 2em;
+}
+
+:root {
+  --fc-small-font-size: .85em;
+  --fc-page-bg-color: #fff;
+  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+  --fc-neutral-text-color: #808080;
+  --fc-border-color: #ddd;
+
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #2C3E50;
+  --fc-button-border-color: #2C3E50;
+  --fc-button-hover-bg-color: #1e2b37;
+  --fc-button-hover-border-color: #1a252f;
+  --fc-button-active-bg-color: #1a252f;
+  --fc-button-active-border-color: #151e27;
+
+  --fc-event-bg-color: #DF1F1F;
+  --fc-event-border-color: #DF1F1F;
+  --fc-event-text-color: #fff;
+  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+  --fc-more-link-bg-color: #d0d0d0;
+  --fc-more-link-text-color: inherit;
+
+  --fc-event-resizer-thickness: 8px;
+  --fc-event-resizer-dot-total-width: 8px;
+  --fc-event-resizer-dot-border-width: 1px;
+
+  --fc-non-business-color: rgba(215, 215, 215, 0.3);
+  --fc-bg-event-color: rgb(143, 223, 130);
+  --fc-bg-event-opacity: 0.3;
+  --fc-highlight-color: rgba(188, 232, 241, 0.3);
+  --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+  --fc-now-indicator-color: red;
+}
+
+.fc-scrollgrid-sync-inner{
+  background-color: #FB088C;
+  color: white;
+  padding: 1em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .fc-col-header-cell-cushion{
+  height:fit-content;
+} */
+
+.fc-col-header-cell-cushion{
+  color: white;
+}
+
+.fc-col-header-cell-cushion{
+  text-decoration: none;
+}
+
+.fc-view-harness{
+  margin: 0em 2em 2em 2em;
+}
+
+.fc-header-toolbar {
+  margin: 2em;
+}
+
+.fc .fc-button-primary {
+  color: #FB088C !important ;
+  background-color: white !important;
+  border-color: #FB088C !important;
+}
+
+.fc .fc-button-primary:disabled {
+  color: #C7C7C7 !important ;
+  background-color: #FBEAE9 !important;
+  border-color: #C7C7C7 !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
